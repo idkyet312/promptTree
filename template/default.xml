@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PromptTreeProject>
+  <asset>
+    <cat visible="true" />
+    <dog visible="true" />
+  </asset>
+  <tree>
+    <shot_1001 visible="true">
+      <cat visible="true" asset_link="cat" />
+    </shot_1001>
+    <shot_1002 visible="true">
+      <dog visible="true" asset_link="dog" />
+    </shot_1002>
+    <shot_1003 visible="true">
+      <cat visible="true" asset_link="cat" />
+      <dog visible="true" asset_link="dog" />
+    </shot_1003>
+  </tree>
+</PromptTreeProject>

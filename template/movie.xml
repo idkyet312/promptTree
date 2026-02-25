@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PromptTreeProject>
+  <asset>
+    <meta_technical_specification visible="true">
+      <gen_ai_model visible="true">
+        <nano_banana visible="true" />
+        <veo visible="true" />
+      </gen_ai_model>
+      <request visible="true">
+        <image visible="true">Create an image.</image>
+        <video visible="true">Create a video.</video>
+      </request>
+      <resolution visible="true">
+        <_1920x1080 visible="true">Full HD (FHD) Veo. Aspect ratio 16:9.</_1920x1080>
+        <_2816x1584 visible="true">2.8K Nano Banana. Aspect ratio 16:9.</_2816x1584>
+        <_3840x2160 visible="true">4K Ultra HD (UHD). Aspect ratio 16:9.</_3840x2160>
+      </resolution>
+    </meta_technical_specification>
+    <camera visible="true">
+      <motion visible="true">
+        <tracking visible="true">
+          <static visible="true">Camera is locked off on tripod. Camera does not move.</static>
+          <dolly_in visible="true" />
+          <dolly_out visible="true" />
+          <trucking_shot visible="true" />
+          <following_shot visible="true" />
+        </tracking>
+        <vertical visible="true">
+          <crane_shot visible="true" />
+          <jib_move visible="true" />
+          <pedestal_up visible="true" />
+          <pedestal_down visible="true" />
+        </vertical>
+        <panning visible="true">
+          <whip_pan visible="true" />
+          <smooth_pan visible="true" />
+          <tilt_up visible="true" />
+          <tilt_down visible="true" />
+        </panning>
+      </motion>
+      <framing visible="true">
+        <extreme_close_up visible="true" />
+        <close_up visible="true" />
+        <medium_shot visible="true" />
+        <cowboy_shot visible="true" />
+        <full_body visible="true" />
+        <wide_shot visible="true" />
+        <establishing_shot visible="true" />
+        <macro visible="true" />
+        <tilt_shift visible="true" />
+        <split_diopter visible="true" />
+      </framing>
+      <angle visible="true">
+        <eye_level visible="true" />
+        <low_angle visible="true" />
+        <high_angle visible="true" />
+        <worms_eye visible="true" />
+        <ground_level visible="true" />
+        <overhead visible="true" />
+        <over_the_shoulder visible="true" />
+        <dutch_angle visible="true" />
+        <pov visible="true" />
+      </angle>
+      <lens visible="true">
+        <aperture_depth_of_field visible="true">
+          <_f_1_2 visible="true">Razor thin focus. Dreamy bokeh.</_f_1_2>
+          <_f_1_8 visible="true">Very shallow. Low light.</_f_1_8>
+          <_f_2_8 visible="true">Professional zoom lens standard. Good separation.</_f_2_8>
+          <_f_4_0 visible="true">Balanced separation and clarity.</_f_4_0>
+          <_f_5_6 visible="true">Standard sharpness.</_f_5_6>
+          <_f_8_0 visible="true">Landscape standard. Mostly in focus.</_f_8_0>
+          <_f_11 visible="true">Deep focus.</_f_11>
+          <_f_16 visible="true">Everything sharp.</_f_16>
+          <_f_22 visible="true">Maximum depth.</_f_22>
+        </aperture_depth_of_field>
+        <focal_length visible="true">
+          <_14mm visible="true">Ultra wide.</_14mm>
+          <_24mm visible="true">Wide.</_24mm>
+          <_35mm visible="true">Classic.</_35mm>
+          <_50mm visible="true">Standard.</_50mm>
+          <_85mm visible="true">Portrait.</_85mm>
+          <_135mm visible="true">Telephoto.</_135mm>
+          <_200mm visible="true">Super tele.</_200mm>
+        </focal_length>
+        <focus visible="true">
+          <rack_focus visible="true" />
+          <zoom_in visible="true" />
+          <variable_focal_length visible="true" />
+        </focus>
+      </lens>
+      <speed visible="true">
+        <slow_motion visible="true" />
+        <time_lapse visible="true" />
+        <_24fps visible="true" />
+        <_60fps visible="true" />
+        <hyper_lapse visible="true" />
+        <fluid_dynamics visible="true" />
+        <natural_motion_blur visible="true" />
+        <_1_50_shutter_speed visible="true" />
+      </speed>
+      <model visible="true">
+        <arri_alexa_lf visible="true" />
+      </model>
+      <stock visible="true">
+        <_35mm_film_grain visible="true" />
+        <kodak_portra_400 visible="true" />
+        <fujifilm_velvia visible="true" />
+      </stock>
+    </camera>
+    <aesthetic visible="true">
+      <composition visible="true">
+        <asset_to_asset_relationship visible="true" />
+        <rule_of_thirds_power_point_intersections visible="true">
+          <upper_left_power_point visible="true" />
+          <upper_right_power_point visible="true" />
+          <lower_left_power_point visible="true" />
+          <lower_right_power_point visible="true" />
+        </rule_of_thirds_power_point_intersections>
+        <vertical_division visible="true">
+          <top_third_upper_tier visible="true" />
+          <middle_third_horizon_line visible="true" />
+          <bottom_third_lower_tier visible="true" />
+        </vertical_division>
+        <horizontal_division visible="true">
+          <left_third visible="true" />
+          <center_third visible="true" />
+          <right_third visible="true" />
+        </horizontal_division>
+        <leading_line visible="true">
+          <converging visible="true">Road vanishing point, hallway perspective.</converging>
+          <diagonal visible="true">Rooftops, handrails, shadows.</diagonal>
+          <curvilinear visible="true">S-curve paths, riverbanks.</curvilinear>
+        </leading_line>
+        <negative_space visible="true">
+          <subject_isolation visible="true">Large areas of overcast soft sky or monochromatic walls.</subject_isolation>
+          <dead_space visible="true">Intentional emptiness to the side of the subject to create tension.</dead_space>
+        </negative_space>
+      </composition>
+      <lighting visible="true">
+        <three_point visible="true">
+          <key visible="true" />
+          <fill visible="true" />
+          <rim visible="true" />
+        </three_point>
+        <golden_hour visible="true">Warm, soft light just before sunset.</golden_hour>
+        <blue_hour visible="true">Cold, melancholic twilight before sunrise.</blue_hour>
+        <noon_sun visible="true">Short shadows, high contrast, bright.</noon_sun>
+        <overcast_soft visible="true">Diffused, shadowless, giant softbox.</overcast_soft>
+        <rembrandt visible="true">Triangle of light on the cheek. Dramatic portraiture.</rembrandt>
+        <moonlight visible="true">Cold, silver/blue low light.</moonlight>
+        <silhouette visible="true">Subject is black against a bright background.</silhouette>
+        <chiaroscuro visible="true">High contrast between light and dark.</chiaroscuro>
+        <effects visible="true">
+          <volumetric_fog visible="true" />
+          <god_rays visible="true" />
+          <lens_flare visible="true" />
+        </effects>
+      </lighting>
+      <color_palette visible="true">
+        <teal_orange visible="true">Blockbuster standard. Cool shadows, warm skin tones.</teal_orange>
+        <desaturated visible="true">Grim, serious, realistic.</desaturated>
+        <cool_tones visible="true">Clinical, detached, or sad.</cool_tones>
+        <high_contrast visible="true">Dramatic deep blacks and bright whites.</high_contrast>
+        <monochromatic visible="true">Using shades of a single color.</monochromatic>
+      </color_palette>
+      <style visible="true">
+        <photorealistic visible="true">Standard live-action.</photorealistic>
+        <cinematic visible="true">High-production, polished Hollywood look.</cinematic>
+        <anime visible="true">Japanese-style animation.</anime>
+        <cartoon visible="true">Classic Golden Age hand-drawn.</cartoon>
+        <film_noir visible="true">High-contrast, moody black and white.</film_noir>
+        <stop_motion visible="true">Claymation or puppet animation.</stop_motion>
+        <hyper_stylized visible="true">Comic book or graphic novel aesthetic.</hyper_stylized>
+        <documentary_verite visible="true">Handheld, raw, and naturalistic.</documentary_verite>
+        <cyberpunk visible="true">Neon-lit, dark, futuristic.</cyberpunk>
+        <expressionist visible="true">Distorted, surreal, and theatrical.</expressionist>
+      </style>
+      <mood visible="true">
+        <melancholic visible="true">Sad, reflective, and bittersweet.</melancholic>
+        <tense visible="true">Suspenseful, anxious, and high-pressure.</tense>
+        <whimsical visible="true">Playful, lighthearted, and imaginative.</whimsical>
+        <grim visible="true">Bleak, harsh, and serious.</grim>
+        <nostalgic visible="true">Sentimental and longing for the past.</nostalgic>
+        <ethereal visible="true">Dreamlike, airy, and otherworldly.</ethereal>
+        <gritty visible="true">Raw, realistic, and unpolished.</gritty>
+        <romantic visible="true">Intimate, warm, and affectionate.</romantic>
+        <ominous visible="true">Foreboding, creepy, and threatening.</ominous>
+        <exhilarating visible="true">High-energy, thrilling, and fast-paced.</exhilarating>
+      </mood>
+      <genre visible="true">
+        <action visible="true" />
+        <adventure visible="true" />
+        <comedy visible="true" />
+        <drama visible="true" />
+        <fantasy visible="true" />
+        <horror visible="true">
+          <folk visible="true" />
+        </horror>
+        <musical visible="true" />
+        <romance visible="true" />
+        <sci_fi visible="true" />
+        <thriller visible="true" />
+        <western visible="true" />
+      </genre>
+    </aesthetic>
+    <subject visible="true">
+      <motion_action visible="true">
+        <motion_bucket_subject_energy visible="true">
+          <level_1_2 visible="true">Micro-expressions, blinking, subtle breathing.</level_1_2>
+          <level_3_5 visible="true">Natural idle, casual walking, hand gestures.</level_3_5>
+          <level_6_8 visible="true">Jogging, animated conversation, urgent movement.</level_6_8>
+          <level_9_10 visible="true">High-velocity sprinting, chaotic flailing, explosive impact.</level_9_10>
+        </motion_bucket_subject_energy>
+        <blocking_stage_direction visible="true">
+          <screen_direction visible="true">Characters enter or exit through the left or right edges of the frame.</screen_direction>
+          <depth_movement visible="true">A subject moves along the Z-axis, traveling from the background to the foreground.</depth_movement>
+          <static_stance visible="true">The subject remains fixed in the center while the environment or camera moves around them.</static_stance>
+          <cross visible="true">A character moves from one side of the set to the other, often passing in front of another character.</cross>
+          <cheat_out visible="true">An actor pivots their body slightly toward the camera to ensure their face remains visible during a conversation.</cheat_out>
+          <marking visible="true">A character moves to a specific, pre-determined physical spot on the floor to stay in focus.</marking>
+          <countering visible="true">One actor moves in the opposite direction of another to maintain a balanced visual composition.</countering>
+          <turn_toward_away visible="true">A character shifts their eyeline or body relative to the camera to reveal or hide emotion.</turn_toward_away>
+          <level_change visible="true">A character moves vertically—sitting, standing, or kneeling—to shift the power dynamic in a scene.</level_change>
+          <business visible="true">Small, physical actions (like lighting a cigarette or pouring a drink) performed while delivering lines.</business>
+        </blocking_stage_direction>
+      </motion_action>
+      <character visible="true">
+        <generic visible="true">
+          <name visible="true" />
+          <gender visible="true" />
+          <ethnicity visible="true" />
+          <species visible="true">Human.</species>
+          <age visible="true" />
+          <build_stature visible="true" />
+          <defining_features visible="true" />
+          <hair visible="true" />
+          <hair_style visible="true" />
+          <eyes visible="true" />
+          <nose visible="true" />
+          <mouth visible="true" />
+          <expression visible="true" />
+          <demeanor visible="true" />
+          <wardrobe_upper_torso visible="true" />
+          <wardrobe_lower_torso visible="true" />
+          <shoes visible="true" />
+          <accessories visible="true" />
+          <props visible="true" />
+          <rotation_360_turnaround visible="true">
+            <_000_degrees visible="true">Full front facing camera.</_000_degrees>
+            <_045_degrees visible="true">3/4 front right facing camera.</_045_degrees>
+            <_090_degrees visible="true">Profile right side silhouette.</_090_degrees>
+            <_135_degrees visible="true">3/4 back right turned away from camera.</_135_degrees>
+            <_180_degrees visible="true">Full back facing away from camera.</_180_degrees>
+            <_225_degrees visible="true">3/4 back left turned away from camera.</_225_degrees>
+            <_270_degrees visible="true">Profile left side silhouette.</_270_degrees>
+            <_315_degrees visible="true">3/4 front left facing camera.</_315_degrees>
+          </rotation_360_turnaround>
+          <reference_image visible="true">
+            <head visible="true">
+              <_000_degrees visible="true">set_name_head_000.png</_000_degrees>
+              <_045_degrees visible="true">set_name_head_045.png</_045_degrees>
+              <_090_degrees visible="true">set_name_head_090.png</_090_degrees>
+              <_180_degrees visible="true">set_name_head_180.png</_180_degrees>
+              <_270_degrees visible="true">set_name_head_270.png</_270_degrees>
+              <_315_degrees visible="true">set_name_head_315.png</_315_degrees>
+            </head>
+            <full visible="true">
+              <_000_degrees visible="true">set_name_full_000.png</_000_degrees>
+              <_045_degrees visible="true">set_name_full_045.png</_045_degrees>
+              <_090_degrees visible="true">set_name_full_090.png</_090_degrees>
+              <_180_degrees visible="true">set_name_full_180.png</_180_degrees>
+              <_270_degrees visible="true">set_name_full_270.png</_270_degrees>
+              <_315_degrees visible="true">set_name_full_315.png</_315_degrees>
+            </full>
+          </reference_image>
+        </generic>
+        <dog visible="true">
+          <name visible="true" />
+          <species visible="true">Dog.</species>
+          <temperament visible="true" />
+          <breed visible="true" />
+          <color visible="true" />
+        </dog>
+        <cat visible="true">
+          <name visible="true" />
+          <species visible="true">Cat.</species>
+          <temperament visible="true" />
+          <breed visible="true" />
+          <color visible="true" />
+        </cat>
+      </character>
+    </subject>
+    <environment_setting visible="true">
+      <time visible="true">24:00PM</time>
+      <date visible="true">31 December 1999</date>
+      <location_house visible="true">
+        <description visible="true">Suburban home with a white picket fence.</description>
+        <interior visible="true" />
+        <exterior visible="true" />
+        <color visible="true">White.</color>
+        <style visible="true">1960s.</style>
+        <texture visible="true" />
+        <climate visible="true" />
+        <geography visible="true" />
+        <surface_materials visible="true" />
+        <surface_textures visible="true" />
+        <light_source visible="true" />
+        <atmosphere visible="true" />
+        <reference_image visible="true">
+          <full visible="true">
+            <_000_degrees visible="true">set_name_full_000.png</_000_degrees>
+            <_045_degrees visible="true">set_name_full_045.png</_045_degrees>
+            <_090_degrees visible="true">set_name_full_090.png</_090_degrees>
+            <_180_degrees visible="true">set_name_full_180.png</_180_degrees>
+            <_270_degrees visible="true">set_name_full_270.png</_270_degrees>
+            <_315_degrees visible="true">set_name_full_315.png</_315_degrees>
+          </full>
+        </reference_image>
+      </location_house>
+      <location_yard visible="true">
+        <description visible="true">Front yard of house.</description>
+        <interior visible="true" />
+        <exterior visible="true" />
+        <color visible="true">White.</color>
+        <style visible="true">1960s.</style>
+        <texture visible="true" />
+        <climate visible="true" />
+        <geography visible="true" />
+        <surface_materials visible="true" />
+        <surface_textures visible="true" />
+        <light_source visible="true" />
+        <atmosphere visible="true" />
+        <condition visible="true">
+          <wet visible="true" />
+          <dry visible="true" />
+          <deteriorated visible="true" />
+        </condition>
+      </location_yard>
+      <sky visible="true">
+        <clear_sky visible="true">A cloudless, deep blue expanse that maximizes natural light.</clear_sky>
+        <overcast visible="true">A solid, gray layer that completely obscures the sun.</overcast>
+        <cumulus visible="true">Fluffy, white, cotton-like mounds with flat bases.</cumulus>
+        <cirrus visible="true">Delicate, wispy streaks found at very high altitudes.</cirrus>
+        <golden_hour visible="true">Warm, low-angle sunlight that creates long shadows.</golden_hour>
+        <twilight_blue_hour visible="true">Deep blue, soft light immediately after sunset.</twilight_blue_hour>
+        <stormy visible="true">Dark, heavy cumulonimbus clouds with visible rain curtains.</stormy>
+        <hazy visible="true">A dusty or humid sky that softens the horizon line.</hazy>
+        <starry visible="true">A clear night sky featuring the Milky Way and constellations.</starry>
+        <auroral visible="true">A night sky filled with flowing green or purple light.</auroral>
+      </sky>
+      <dimension visible="true">
+        <height_cm visible="true" />
+        <width_cm visible="true" />
+        <depth_cm visible="true" />
+        <weight_kg visible="true" />
+      </dimension>
+    </environment_setting>
+    <text_rendering visible="true">
+      <text visible="true">Render the word "TEXT"</text>
+      <font_family visible="true">Arial, Times New Roman, etc.</font_family>
+      <font_weight visible="true">Bold, Light, Semibold.</font_weight>
+      <font_size visible="true">Measured in points (pt) or pixels (px).</font_size>
+      <kerning visible="true" />
+      <tracking visible="true" />
+      <line_spacing visible="true" />
+      <alignment visible="true">Left, Center, Right, Justified.</alignment>
+      <letter_case visible="true">Uppercase, Lowercase, Sentence case.</letter_case>
+      <opacity visible="true" />
+      <fill visible="true" />
+    </text_rendering>
+    <audio_cue visible="true">
+      <sfx visible="true">Action sounds.</sfx>
+      <ambient visible="true">Environment sounds.</ambient>
+      <dialogue_speech visible="true">"Spoken text".</dialogue_speech>
+      <speech_accent visible="true">North American. USA.</speech_accent>
+    </audio_cue>
+    <negative_constraint visible="true">
+      <no_music visible="true" />
+      <no_subtitles visible="true" />
+      <no_watermarks visible="true" />
+      <no_camera_shake visible="true" />
+      <no_text_artifacts visible="true" />
+      <no_digital_noise visible="true" />
+    </negative_constraint>
+  </asset>
+  <tree>
+    <project visible="true">Movie, film, show, cinema.<project_name visible="true">
+        <sequence visible="true">A sequence of shots.<sequence_name visible="true">
+            <shot visible="true">
+              <shot1001 visible="true">
+                <duration_seconds visible="true" />
+              </shot1001>
+              <shot1002 visible="true">
+                <duration_seconds visible="true" />
+              </shot1002>
+              <shot1003 visible="true">
+                <duration_seconds visible="true" />
+              </shot1003>
+            </shot>
+          </sequence_name>
+        </sequence>
+      </project_name>
+    </project>
+  </tree>
+</PromptTreeProject>
