@@ -1,6 +1,6 @@
 ![Prompt Tree Interface](image/promptTree_Version_1_0_19.jpeg)
 
-**Prompt Tree Version 1.0**
+**Prompt Tree Version 1.21 **
 
 **Technical Documentation**
 
@@ -20,7 +20,7 @@ By using a hierarchical "tree" approach, filmmakers can ensure prompt consistenc
 
 **3. Editor Panel (Bottom-Left)** A simple text editor used to refine the specific prompt content.
 
-**4. Prompt Result (Bottom-Right)** The live output window. It displays the compiled prompt (Export to Text or XML format) for whichever branch or node you have currently selected in the Tree.
+**4. Prompt Panel (Bottom-Right)** The live output window. It displays the compiled prompt (Export to Text or XML format) for whichever branch or node you have currently selected in the Tree.
 
 
 
@@ -30,21 +30,21 @@ By using a hierarchical "tree" approach, filmmakers can ensure prompt consistenc
 
 In standard prompting, changing a character's detail requires manual editing every shot prompt. In **Prompt Tree**, assets are "instanced":
 
-- **Hierarchy:** Create parent nodes for categories (e.g., "Character") and child nodes for individuals (e.g., "Jane").
+- **Hierarchy:** Create parent nodes for categories (e.g., "Character") and child nodes for individual assets (e.g., "Jane").
 
-- **Recyclability:** Once Jane is defined in the Asset panel, you can drag her into 100 different shots.
+- **Recyclability:** Once the "Jane" asset is defined in the Asset panel, you can drag it into 100 different shots.
 
 - **Global Updates:** If you need to modify Jane’s appearance, you edit the single asset in the library. This automatically updates every shot in the Tree where she is used, eliminating the need to edit separate monolithic shot files.
 
 ### **2. Visibility Toggles**
 
-Each node in the Tree has a **Visibility** setting. This allows you to store multiple states for one character within a single asset without them clashing.
+Each node in the Tree has a **Visible** setting. This allows you to store multiple states for one character within a single asset without them clashing.
 
-- *Example:* In a "Home" shot, you can toggle Jane’s wardrobe asset "Pyjamas" to **Visible** and "Work Uniform" to **Invisible**. The final prompt will only generate the visible wardrobe choice.
+- *Example:* In a "Home" shot, you can toggle Jane’s wardrobe asset "Pyjamas" to **Visible** and "Work Uniform" to **Invisible**. The final prompt will only include the visible wardrobe choice.
 
 ### **3. XML Representation & "Prompt Bleed"**
 
-While the software supports standard text, it defaults to **XML representation**, which is highly preferred by modern AI models.
+While the software supports standard text, it defaults to **XML representation**, which is preferred by some AI models.
 
 - **The Benefit:** XML encapsulates descriptions within element tags. This prevents "Prompt Adjective Bleed," a common issue where a description of a background object accidentally leaks into the description of the character.
 
@@ -54,7 +54,7 @@ While the software supports standard text, it defaults to **XML representation**
 
 The default template includes a comprehensive **Movie Directorial Prompt Library**. This allows filmmakers to explicitly direct:
 
-- **Camera:** Composition, Motion, Lens.
+- **Cinematography:** Composition, Motion, Lens.
 
 - **Subject:** Character, Setting/Environment.
 
@@ -74,6 +74,14 @@ In image and video models, elements at the beginning of a prompt often receive h
 - **Insert Key:** Adds a new node to your structure.
 
 - **Delete Key:** Removes the selected node.
+
+- **N Key:** Names the selected node.
+
+- **V Key:** Toggles visible on the selected node.
+
+- **X Key:** Toggles expand all.
+
+- **Shift + X Key:** Toggles expand branch on the selected node.
 
 - **Right-Click:** Opens a context menu with advanced node properties and options.
 
