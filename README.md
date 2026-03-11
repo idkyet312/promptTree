@@ -1,6 +1,6 @@
 ![Prompt Tree Interface](image/promptTree_Version_1_0_19.jpeg)
 
-**Prompt Tree Version 1.21 **
+**Prompt Tree Version 1.21**
 
 **Technical Documentation**
 
