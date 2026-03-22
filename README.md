@@ -1,88 +1,111 @@
 ![Prompt Tree Interface](image/promptTree_Version_1_0_19.jpeg)
 
-**Prompt Tree Version 1.21**
-
-**Technical Documentation**
+# **Prompt Tree v1.0.22**
 
 ## **Overview**
 
-**Prompt Tree** is a specialized prompt-engineering application designed for Gen AI image and video production. It is built specifically for filmmakers to manage complex, multi-shot workflows by replacing monolithic text blocks with a structured, object-oriented framework.
-
-By using a hierarchical "tree" approach, filmmakers can ensure prompt consistency across an entire production, making every element—from characters to cameras—a recyclable and easily editable asset.
-
-
+**Prompt Tree** is a specialized prompt-engineering application designed for Generative AI image and video production. It is built specifically for filmmakers to manage complex, multi-shot workflows by replacing monolithic text blocks with a structured, object-oriented asset framework. By using a hierarchical "tree" approach, every element—from characters to cameras—becomes a recyclable and easily editable asset.
 
 ## **The Four-Panel Interface**
 
-**1. Asset Panel (Top-Left)** Your library of assets. This is where you create the core definitions for your project, such as characters and settings. Think ingredients.
+The application uses a **4-Panel layout** to manage the workflow:
 
-**2. Tree Panel (Top-Right)** Your production staging area. You drag assets from your library into this panel to build out sequences, scenes, and individual shots. Think recipe.
+- **Asset Panel (Top-Left):** Your library of assets and core definitions (characters, settings, etc.).
 
-**3. Editor Panel (Bottom-Left)** A simple text editor used to refine the specific prompt content.
+- **Tree Panel (Top-Right):** The project hierarchy where you build sequences and shots by dragging assets from the library.
 
-**4. Prompt Panel (Bottom-Right)** The live output window. It displays the compiled prompt (Export to Text or XML format) for whichever branch or node you have currently selected in the Tree.
+- **Editor Panel (Bottom-Left):** A text editor for the "Value" or prompt content of the currently selected node.
 
+- **Prompt Panel (Bottom-Right):** A live, concatenated preview of the final prompt, formatted with indentation and hierarchy.
 
-
-## **Core Features & Workflow**
+## **Core Features**
 
 ### **1. Object-Oriented Asset Management**
 
-In standard prompting, changing a character's detail requires manual editing every shot prompt. In **Prompt Tree**, assets are "instanced":
+- **Instancing:** Dragging an asset into the Tree creates a link to the source.
 
-- **Hierarchy:** Create parent nodes for categories (e.g., "Character") and child nodes for individual assets (e.g., "Jane").
+- **Global Updates:** Modifying a source asset in the library automatically updates every linked instance in the Project Tree.
 
-- **Recyclability:** Once the "Jane" asset is defined in the Asset panel, you can drag it into 100 different shots.
+- **Inheritance:** Shots inherit descriptions from their parent nodes, allowing for consistent environmental or stylistic prompts.
 
-- **Global Updates:** If you need to modify Jane’s appearance, you edit the single asset in the library. This automatically updates every shot in the Tree where she is used, eliminating the need to edit separate monolithic shot files.
+### **2. Visibility & Logic**
 
-### **2. Visibility Toggles**
+- **Visibility Toggle:** Nodes can be toggled as visible (👁) or hidden (—).
 
-Each node in the Tree has a **Visible** setting. This allows you to store multiple states for one character within a single asset without them clashing.
+- **Prompt Exclusion:** Hidden nodes are excluded from the final concatenated prompt.
 
-- *Example:* In a "Home" shot, you can toggle Jane’s wardrobe asset "Pyjamas" to **Visible** and "Work Uniform" to **Invisible**. The final prompt will only include the visible wardrobe choice.
+- **Effective Visibility:** A node is automatically excluded if any of its ancestors are hidden (indicated by a ◌ icon).
 
-### **3. XML Representation & "Prompt Bleed"**
+### **3. Synchronization Tools**
 
-While the software supports standard text, it defaults to **XML representation**, which is preferred by some AI models.
+- **Sync Content:** Forces all linked nodes in the Tree to match the current structure and naming of the Asset library.
 
-- **The Benefit:** XML encapsulates descriptions within element tags. This prevents "Prompt Adjective Bleed," a common issue where a description of a background object accidentally leaks into the description of the character.
+- **Sync Visible:** Mirrors the visibility states from the Asset library to the linked nodes in the Tree.
 
-- **AI Digestibility:** Structured XML is much clearer for AI models to parse, leading to higher prompt adherence and more concise results.
+## **Keyboard Shortcuts**
 
-### **4. Directorial Library**
+### **File Operations**
 
-The default template includes a comprehensive **Movie Directorial Prompt Library**. This allows filmmakers to explicitly direct:
+- **Ctrl+N**: New Project.
 
-- **Cinematography:** Composition, Motion, Lens.
+- **Ctrl+O**: Open Project.
 
-- **Subject:** Character, Setting/Environment.
+- **Ctrl+I**: Import/Merge Project.
 
-- **Specifications:** Resolution, Aspect Ratio.
+- **Ctrl+S**: Quick Save.
 
-### **5. Hierarchical Weighting**
+- **Ctrl+Shift+S**: Save Project As....
 
-In image and video models, elements at the beginning of a prompt often receive higher importance weight than those at the end. **Prompt Tree** allows users to manage this dominance by moving nodes up or down within the **Tree Panel**.
+- **Ctrl+Alt+S**: Save Version Up (Auto-increments `v0001`).
 
+### **Node Operations**
 
+- **Enter**: Add Sibling Node.
 
+- **Insert / Ctrl+Enter**: Add Child Node.
 
-## **Controls & Maintenance**
+- **F2**: Rename Node.
 
-- **Sync Buttons:** Located above the Tree Panel. Use these if the Assets or the Visibility in your Tree get out of sync after a major edit.
+- **Ctrl+D**: Duplicate Node and all children.
 
-- **Insert Key:** Adds a new node to your structure.
+- **- (Minus)**: Add visual separator line.
 
-- **Delete Key:** Removes the selected node.
+- **V**: Toggle Visibility.
 
-- **N Key:** Names the selected node.
+- **Delete / Backspace**: Delete Node and children.
 
-- **V Key:** Toggles visible on the selected node.
+- **Shift+X**: Expand/collapse selected branch.
 
-- **X Key:** Toggles expand all.
+- **Ctrl+Shift+X**: Expand/collapse ALL nodes in tree.
 
-- **Shift + X Key:** Toggles expand branch on the selected node.
+### **Navigation & View**
 
-- **Right-Click:** Opens a context menu with advanced node properties and options.
+- **Alt+Click**: Expand/Collapse node and all descendants.
 
-- **XML Button:** Saves the current prompt configuration to an .xml file, which can be uploaded directly to AI generation platforms.
+- **Shift+X**: Toggle expand/collapse for the selected branch only.
+
+- **Ctrl+Z / Ctrl+Y**: Undo / Redo.
+
+### **Prompt Operations**
+
+- **Ctrl+G**: Generate Prompt (Copy to clipboard).
+
+- **Ctrl+C**: Copy preview text (when Tree is active).
+
+## **Drag & Drop Logic**
+
+The application uses placement indicators:
+
+- **Top Third of Node**: Drops the item **before** the target node.
+
+- **Middle Third of Node**: Drops the item **into** the target node as a child.
+
+- **Bottom Third of Node**: Drops the item **after** the target node.
+
+## **Exporting**
+
+- **Copy Prompt:** Copies the current indented preview to the clipboard.
+
+- **Save XML:** Exports the prompt as a hierarchically tagged XML file for AI digestibility.
+
+- **Save TXT:** Exports the prompt as a standard plain text file.
