@@ -32,7 +32,7 @@ The application uses a **4-Panel layout** to manage the workflow:
 
 - There are three node visibility states :
 
-1. **None  **Inherits visibility of parent node. This is the default visibility state.
+1. **None**  Inherits visibility of parent node. This is the default visibility state.
 
 2. 👁  Visible. Included in prompt.
 
