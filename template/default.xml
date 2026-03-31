@@ -1,19 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<PromptTreeProject>
+<promptTreeProject>
   <asset>
-    <cat visible="true" />
-    <dog visible="true" />
+    <cat name="cat" expand="true">
+      <Value>Meow.</Value>
+    </cat>
+    <dog name="dog" expand="true">
+      <Value>Woof!</Value>
+    </dog>
   </asset>
   <tree>
-    <shot_1001 visible="true">
-      <cat visible="true" asset_link="cat" />
-    </shot_1001>
-    <shot_1002 visible="true">
-      <dog visible="true" asset_link="dog" />
-    </shot_1002>
-    <shot_1003 visible="true">
-      <cat visible="true" asset_link="cat" />
-      <dog visible="true" asset_link="dog" />
-    </shot_1003>
+    <shot name="shot" expand="true" last_active_tree_node="true">
+      <Node_1001 name="1001" expand="true">
+        <cat name="cat" expand="false" asset_link="cat[0]" />
+      </Node_1001>
+      <Node_1002 name="1002" expand="true">
+        <dog name="dog" expand="false" asset_link="dog[1]" />
+      </Node_1002>
+      <Node_1003 name="1003" expand="true">
+        <cat name="cat" expand="false" asset_link="cat[0]" />
+        <dog name="dog" expand="false" asset_link="dog[1]" />
+      </Node_1003>
+    </shot>
   </tree>
-</PromptTreeProject>
+</promptTreeProject>
