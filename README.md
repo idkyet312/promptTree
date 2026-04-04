@@ -1,10 +1,10 @@
 ![Prompt Tree Interface](image/promptTree_Version_1_0_23.jpg)
 
-# **Prompt Tree v1.0.23**
+# **Prompt Tree v1.0.24**
 
 ## **Overview**
 
-**Prompt Tree** is a specialized prompt-engineering application designed for Generative AI image and video production. It is built specifically for filmmakers to manage complex, multi-shot workflows by replacing monolithic text blocks with a structured, object-oriented asset framework. By using a hierarchical tree approach, every element—from characters to cameras—becomes a recyclable and easily editable asset.
+**Prompt Tree** is a specialized prompt-engineering Windows-based application designed for Generative AI image and video production. It is built specifically for filmmakers to manage complex, multi-shot workflows by replacing monolithic text blocks with a structured, object-oriented asset framework. By using a hierarchical tree approach, every element—from characters to cameras—becomes a recyclable and easily editable asset.
 
 ## **The Four-Panel Interface**
 
@@ -36,11 +36,9 @@ The application uses a **4-Panel layout** to manage the workflow:
 
 2. 👁  Visible. Included in prompt.
 
-3.  —  Invisible. Excluded from prompt.
+3. —  Invisible. Excluded from prompt.
 
 - The Asset Panel nodes and the Tree Panel nodes can have separate Visibility states.
-
-
 
 ### **3. Synchronization Buttons**
 
@@ -50,57 +48,75 @@ The application uses a **4-Panel layout** to manage the workflow:
 
 ## **Keyboard Shortcuts**
 
-### **File Operations**
+### **File Menu**
 
-- **Ctrl+N**: New Project.
+- **Ctrl+N**: New
 
-- **Ctrl+O**: Open Project.
+- **Ctrl+O**: Open...
 
-- **Ctrl+I**: Import/Merge Project.
+- **Ctrl+I**: Import...
 
-- **Ctrl+S**: Quick Save.
+- **Ctrl+S**: Save
 
-- **Ctrl+Shift+S**: Save Project As....
+- **Ctrl+Shift+S**: Save As...
 
-- **Ctrl+Alt+S**: Save Version Up (Auto-increments `v0000`).
+- **Ctrl+Alt+S**: Save Version Up
 
-- **Ctrl+Q**: Exit Application.
+- **Ctrl+Q**: Exit
 
-### **Node Operations**
+### **Edit Menu**
 
-- **Enter**: Add Sibling Node.
+- **Ctrl+Z**: Undo
 
-- **Insert / Ctrl+Enter**: Add Child Node.
+- **Ctrl+Y / Ctrl+Shift+Z**: Redo
 
-- **F2**: Rename Node.
+- **Ctrl+X**: Cut Node
 
-- **Ctrl+D**: Duplicate Node and all children.
+- **Ctrl+C**: Copy Node
 
-- **- (Minus)**: Add visual separator line.
+- **Ctrl+V**: Paste Node
 
-- **V**: Toggle Visibility.
+- **Enter**: Add Sibling Node
 
-- **Alt+V**: Clear all visibility overrides in active tree.
+- **Insert / Ctrl+Enter**: Add Child Node
 
-- **Delete / Backspace**: Delete Node and children.
+- **- (Minus)**: Add Separator
 
-### **Navigation & View**
+### **Node Context Menu & Operations**
 
-- **Ctrl+Shift+X**: Expand/collapse ALL nodes in tree.
+- **F2**: Rename Node
 
-- **Shift+X / Alt+Click**: Expand/Collapse node and all descendants.
+- **Ctrl+D**: Duplicate Node
 
-- **Ctrl+J**: Jump from linked instance to original source asset.
+- **Delete / Backspace**: Delete Node
 
-- **Ctrl+Z**: Undo.
+- **V**: Toggle Visibility
 
-- **Ctrl+Y / Ctrl+Shift+Z**: Redo.
+- **Alt+V**: Reset Visibility
+
+- **Ctrl+Shift+X**: Expand / Collapse All
+
+- **Shift+X / Alt+Click**: Expand / Collapse Branch
+
+- **Right/Left**: Expand / Collapse Selected Node
+
+- **Ctrl+J**: Jump to Source Asset
+
+### **Mouse Operations & Navigation**
+
+- **Up/Down**: Navigate tree up and down.
+
+- **Alt+Click**: Expand / Collapse clicked node and all its children.
+
+- **Right-Click**: Opens context menu with advanced node options.
 
 ### **Prompt Operations**
 
-- **Ctrl+G**: Generate Prompt (Copy to clipboard).
+- **Ctrl+Shift+C**: Copy Prompt
 
-- **Ctrl+C**: Copy preview text (when Tree Panel is active).
+### **Template Menu**
+
+- **Load Template**: The application automatically scans a local `template/` folder for `.xml` files. Clicking a template from this menu will replace the current workspace with the template's structure without overwriting the original file.
 
 ## **Drag & Drop Logic**
 
@@ -110,10 +126,21 @@ The application uses a **4-Panel layout** to manage the workflow:
 
 - **Bottom Third of Node**: Drops the item **after** the target node.
 
-## **Exporting**
+- **Escape**: Cancel active drag and drop.
 
-- **Copy Prompt:** Copies the current indented preview to the clipboard.
+## **UI Buttons & Exports**
 
-- **Save XML:** Exports the prompt as a hierarchically tagged XML file for AI digestibility.
+### **Tree Panel Buttons (Top-Right)**
 
-- **Save TXT:** Exports the prompt as a standard plain text file.
+- **Sync Content**: Forces all linked node names and content in the Tree Panel to match the Asset Panel.
+
+- **Sync Visible**: Forces all nodes in the Tree Panel to match the visibility of the Asset Panel.
+
+### **Prompt Panel Buttons (Bottom-Right)**
+
+- **Copy Prompt**: Copies the current indented preview to the clipboard.
+
+- **Save XML**: Saves the current prompt configuration to an hierarchically tagged `.xml` file for AI digestibility.
+
+- **Save TXT**: Exports the prompt as a standard plain text file.
+
