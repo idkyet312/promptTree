@@ -1,6 +1,6 @@
 ![Prompt Tree Interface](image/promptTree_Version_1_0_23.jpg)
 
-# **Prompt Tree v1.0.24**
+# **Prompt Tree v1.0.2**5
 
 ## **Overview**
 
@@ -70,6 +70,8 @@ The application uses a **4-Panel layout** to manage the workflow:
 
 - **Ctrl+Y / Ctrl+Shift+Z**: Redo
 
+- **Ctrl+F**: Find Dialog
+
 - **Ctrl+X**: Cut Node
 
 - **Ctrl+C**: Copy Node
@@ -109,6 +111,8 @@ The application uses a **4-Panel layout** to manage the workflow:
 - **Alt+Click**: Expand / Collapse clicked node and all its children.
 
 - **Right-Click**: Opens context menu with advanced node options.
+
+- **Ctrl+Home**: Jump to top of panel
 
 ### **Prompt Operations**
 
