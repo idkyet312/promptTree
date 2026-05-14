@@ -299,7 +299,7 @@ The static single-point perspective locked heading the camera is facing is :</Va
       </stock>
     </cinematography>
     <aesthetic name="aesthetic" expand="false">
-      <composition name="composition" expand="true">
+      <composition name="composition" expand="false">
         <centered name="centered" expand="true" />
         <asset_to_asset_relationship name="asset to asset relationship" visible="false" expand="true" />
         <rule_of_thirds_power_point_intersections name="rule of thirds power point intersections" visible="false" expand="false">
@@ -339,6 +339,10 @@ The static single-point perspective locked heading the camera is facing is :</Va
         </negative_space>
       </composition>
       <lighting name="lighting" expand="false">
+        <light_fixtures_not_visible name="light fixtures not visible" expand="true">
+          <Value>The light fixtures and elements themselves are never visible in the final image.
+</Value>
+        </light_fixtures_not_visible>
         <eye_catch name="eye catch" expand="false">
           <angle name="angle" expand="false">
             <Node_10_o_clock name=" 10 o  clock" expand="true" />
@@ -363,12 +367,12 @@ The static single-point perspective locked heading the camera is facing is :</Va
           </type>
         </eye_catch>
         <three_point name="three point" expand="false">
-          <key name="key" expand="true">
-            <from_direction name="from direction" expand="true">
+          <key name="key" expand="false">
+            <from_direction name="from direction" expand="false">
               <image_front_top_left name="image front top left" expand="true" />
               <image_front_top_right name="image front top right" visible="false" expand="true" />
             </from_direction>
-            <quality name="quality" expand="true">
+            <quality name="quality" expand="false">
               <hard name="hard" visible="false" expand="true">
                 <Value>Small scale distinct light source.</Value>
               </hard>
@@ -380,12 +384,12 @@ The static single-point perspective locked heading the camera is facing is :</Va
               </diffusion>
             </quality>
           </key>
-          <fill name="fill" expand="true">
-            <from_direction name="from direction" expand="true">
+          <fill name="fill" expand="false">
+            <from_direction name="from direction" expand="false">
               <image_middle_left name="image middle left" visible="false" expand="true" />
               <image_middle_right name="image middle right" expand="true" />
             </from_direction>
-            <quality name="quality" expand="true">
+            <quality name="quality" expand="false">
               <hard name="hard" visible="false" expand="true">
                 <Value>Small scale distinct light source.</Value>
               </hard>
@@ -397,12 +401,12 @@ The static single-point perspective locked heading the camera is facing is :</Va
               </diffusion>
             </quality>
           </fill>
-          <rim name="rim" expand="true">
-            <from_direction name="from direction" expand="true">
+          <rim name="rim" expand="false">
+            <from_direction name="from direction" expand="false">
               <image_back_left name="image back left" visible="false" expand="true" />
               <image_back_right name="image back right" expand="true" />
             </from_direction>
-            <quality name="quality" expand="true">
+            <quality name="quality" expand="false">
               <hard name="hard" visible="false" expand="true">
                 <Value>Small scale distinct light source.</Value>
               </hard>
@@ -433,13 +437,20 @@ The static single-point perspective locked heading the camera is facing is :</Va
         <moonlight name="moonlight" visible="false" expand="true">
           <Value>Cold, silver/blue low light.</Value>
         </moonlight>
+        <airstar_moon_balloon_space_light name="airstar moon balloon space light" visible="false" expand="true">
+          <Value>Cold, silver/blue low light.
+Bright soft overhead wide top light.
+Airstar moon balloon looks like a giant, glowing white orb of translucent fabric that hovers over a film set to cast a soft, natural, 360-degree light similar to a full moon.
+
+</Value>
+        </airstar_moon_balloon_space_light>
         <silhouette name="silhouette" visible="false" expand="true">
           <Value>Subject is black against a bright background.</Value>
         </silhouette>
         <chiaroscuro name="chiaroscuro" visible="false" expand="true">
           <Value>High contrast between light and dark.</Value>
         </chiaroscuro>
-        <effects name="effects" visible="false" expand="true">
+        <effects name="effects" visible="false" expand="false">
           <volumetric_fog name="volumetric fog" expand="true" />
           <god_rays name="god rays" expand="true" />
           <lens_flare name="lens flare" expand="true" />
@@ -534,7 +545,7 @@ The static single-point perspective locked heading the camera is facing is :</Va
         <comedy name="comedy" expand="true" />
         <drama name="drama" expand="true" />
         <fantasy name="fantasy" expand="true" />
-        <horror name="horror" expand="true">
+        <horror name="horror" expand="false">
           <folkloric name="folkloric" expand="true" />
         </horror>
         <musical name="musical" expand="true" />
@@ -1157,7 +1168,6 @@ The character looks straight ahead in the same direction which they are facing.<
           <Value>White.</Value>
         </color>
         <style name="style" visible="false" expand="true" />
-        <texture name="texture" visible="false" expand="true" />
         <geographic_location name="geographic location" visible="false" expand="true" />
         <surface_materials name="surface materials" expand="true">
           <Value>Diffused flat white matte paint.</Value>
@@ -1371,7 +1381,7 @@ The character looks straight ahead in the same direction which they are facing.<
         <Value>North American. USA.</Value>
       </speech_accent>
       <music name="music" expand="true" />
-      <singing name="singing" expand="true">
+      <singing name="singing" expand="false">
         <lyrics name="lyrics" expand="true">
           <Value>[Subject] sings: "[Lyric words]"</Value>
         </lyrics>
@@ -1388,7 +1398,7 @@ The character looks straight ahead in the same direction which they are facing.<
     </negative_constraint>
   </asset>
   <tree>
-    <project name="project" expand="true">
+    <project name="project" expand="true" last_active_tree_node="true">
       <meta_technical_specification name="meta technical specification" expand="false" asset_link="meta technical specification[0]">
         <gen_ai_model name="gen ai model" expand="false" asset_link="meta technical specification[0]/gen ai model[0]">
           <nano_banana name="nano banana" expand="false" asset_link="meta technical specification[0]/gen ai model[0]/nano banana[0]" />
@@ -1406,7 +1416,7 @@ The character looks straight ahead in the same direction which they are facing.<
       </meta_technical_specification>
       <sequence name="sequence" expand="true">
         <shot name="shot" expand="true">
-          <Node_1001 name="1001" expand="true" last_active_tree_node="true">
+          <Node_1001 name="1001" expand="true">
             <priority name="priority" visible="false" expand="false" asset_link="priority[2]">
               <match_reference_image name="match reference image" visible="false" expand="false" asset_link="priority[2]/match reference image[0]" />
               <rotation_360_turnaround_view name="rotation 360 turnaround view" visible="false" expand="false" asset_link="priority[2]/rotation 360 turnaround view[1]">
@@ -1597,66 +1607,68 @@ The character looks straight ahead in the same direction which they are facing.<
                 </negative_space>
               </composition>
               <lighting name="lighting" expand="false" asset_link="aesthetic[5]/lighting[1]">
-                <eye_catch name="eye catch" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[0]">
-                  <angle name="angle" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[0]/angle[0]">
-                    <Node_10_o_clock name=" 10 o  clock" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[0]/angle[0]/ 10 o  clock[0]" />
-                    <Node_2_o_clock name=" 2 o  clock" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[0]/angle[0]/ 2 o  clock[1]" />
+                <light_fixtures_not_visible name="light fixtures not visible" expand="false" asset_link="aesthetic[5]/lighting[1]/light fixtures not visible[0]" />
+                <eye_catch name="eye catch" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[1]">
+                  <angle name="angle" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[1]/angle[0]">
+                    <Node_10_o_clock name=" 10 o  clock" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[1]/angle[0]/ 10 o  clock[0]" />
+                    <Node_2_o_clock name=" 2 o  clock" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[1]/angle[0]/ 2 o  clock[1]" />
                   </angle>
-                  <type name="type" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[0]/type[1]">
-                    <classic_point name="classic point" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[0]/type[1]/classic point[0]" />
-                    <soft_box_rectangle name="soft box rectangle" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[0]/type[1]/soft box rectangle[1]" />
-                    <beauty_ring name="beauty ring" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[0]/type[1]/beauty ring[2]" />
-                    <octabank name="octabank" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[0]/type[1]/octabank[3]" />
-                    <clam_shell_arc name="clam shell arc" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[0]/type[1]/clam shell arc[4]" />
+                  <type name="type" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[1]/type[1]">
+                    <classic_point name="classic point" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[1]/type[1]/classic point[0]" />
+                    <soft_box_rectangle name="soft box rectangle" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[1]/type[1]/soft box rectangle[1]" />
+                    <beauty_ring name="beauty ring" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[1]/type[1]/beauty ring[2]" />
+                    <octabank name="octabank" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[1]/type[1]/octabank[3]" />
+                    <clam_shell_arc name="clam shell arc" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/eye catch[1]/type[1]/clam shell arc[4]" />
                   </type>
                 </eye_catch>
-                <three_point name="three point" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]">
-                  <key name="key" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/key[0]">
-                    <from_direction name="from direction" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/key[0]/from direction[0]">
-                      <image_front_top_left name="image front top left" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/key[0]/from direction[0]/image front top left[0]" />
-                      <image_front_top_right name="image front top right" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/key[0]/from direction[0]/image front top right[1]" />
+                <three_point name="three point" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]">
+                  <key name="key" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/key[0]">
+                    <from_direction name="from direction" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/key[0]/from direction[0]">
+                      <image_front_top_left name="image front top left" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/key[0]/from direction[0]/image front top left[0]" />
+                      <image_front_top_right name="image front top right" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/key[0]/from direction[0]/image front top right[1]" />
                     </from_direction>
-                    <quality name="quality" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/key[0]/quality[1]">
-                      <hard name="hard" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/key[0]/quality[1]/hard[0]" />
-                      <soft name="soft" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/key[0]/quality[1]/soft[1]" />
-                      <diffusion name="diffusion" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/key[0]/quality[1]/diffusion[2]" />
+                    <quality name="quality" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/key[0]/quality[1]">
+                      <hard name="hard" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/key[0]/quality[1]/hard[0]" />
+                      <soft name="soft" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/key[0]/quality[1]/soft[1]" />
+                      <diffusion name="diffusion" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/key[0]/quality[1]/diffusion[2]" />
                     </quality>
                   </key>
-                  <fill name="fill" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/fill[1]">
-                    <from_direction name="from direction" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/fill[1]/from direction[0]">
-                      <image_middle_left name="image middle left" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/fill[1]/from direction[0]/image middle left[0]" />
-                      <image_middle_right name="image middle right" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/fill[1]/from direction[0]/image middle right[1]" />
+                  <fill name="fill" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/fill[1]">
+                    <from_direction name="from direction" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/fill[1]/from direction[0]">
+                      <image_middle_left name="image middle left" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/fill[1]/from direction[0]/image middle left[0]" />
+                      <image_middle_right name="image middle right" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/fill[1]/from direction[0]/image middle right[1]" />
                     </from_direction>
-                    <quality name="quality" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/fill[1]/quality[1]">
-                      <hard name="hard" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/fill[1]/quality[1]/hard[0]" />
-                      <soft name="soft" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/fill[1]/quality[1]/soft[1]" />
-                      <diffusion name="diffusion" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/fill[1]/quality[1]/diffusion[2]" />
+                    <quality name="quality" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/fill[1]/quality[1]">
+                      <hard name="hard" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/fill[1]/quality[1]/hard[0]" />
+                      <soft name="soft" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/fill[1]/quality[1]/soft[1]" />
+                      <diffusion name="diffusion" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/fill[1]/quality[1]/diffusion[2]" />
                     </quality>
                   </fill>
-                  <rim name="rim" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/rim[2]">
-                    <from_direction name="from direction" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/rim[2]/from direction[0]">
-                      <image_back_left name="image back left" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/rim[2]/from direction[0]/image back left[0]" />
-                      <image_back_right name="image back right" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/rim[2]/from direction[0]/image back right[1]" />
+                  <rim name="rim" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/rim[2]">
+                    <from_direction name="from direction" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/rim[2]/from direction[0]">
+                      <image_back_left name="image back left" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/rim[2]/from direction[0]/image back left[0]" />
+                      <image_back_right name="image back right" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/rim[2]/from direction[0]/image back right[1]" />
                     </from_direction>
-                    <quality name="quality" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/rim[2]/quality[1]">
-                      <hard name="hard" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/rim[2]/quality[1]/hard[0]" />
-                      <soft name="soft" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/rim[2]/quality[1]/soft[1]" />
-                      <diffusion name="diffusion" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[1]/rim[2]/quality[1]/diffusion[2]" />
+                    <quality name="quality" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/rim[2]/quality[1]">
+                      <hard name="hard" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/rim[2]/quality[1]/hard[0]" />
+                      <soft name="soft" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/rim[2]/quality[1]/soft[1]" />
+                      <diffusion name="diffusion" expand="false" asset_link="aesthetic[5]/lighting[1]/three point[2]/rim[2]/quality[1]/diffusion[2]" />
                     </quality>
                   </rim>
                 </three_point>
-                <golden_hour name="golden hour" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/golden hour[2]" />
-                <blue_hour name="blue hour" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/blue hour[3]" />
-                <noon_sun name="noon sun" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/noon sun[4]" />
-                <overcast_soft name="overcast soft" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/overcast soft[5]" />
-                <rembrandt name="rembrandt" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/rembrandt[6]" />
-                <moonlight name="moonlight" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/moonlight[7]" />
-                <silhouette name="silhouette" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/silhouette[8]" />
-                <chiaroscuro name="chiaroscuro" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/chiaroscuro[9]" />
-                <effects name="effects" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/effects[10]">
-                  <volumetric_fog name="volumetric fog" expand="false" asset_link="aesthetic[5]/lighting[1]/effects[10]/volumetric fog[0]" />
-                  <god_rays name="god rays" expand="false" asset_link="aesthetic[5]/lighting[1]/effects[10]/god rays[1]" />
-                  <lens_flare name="lens flare" expand="false" asset_link="aesthetic[5]/lighting[1]/effects[10]/lens flare[2]" />
+                <golden_hour name="golden hour" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/golden hour[3]" />
+                <blue_hour name="blue hour" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/blue hour[4]" />
+                <noon_sun name="noon sun" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/noon sun[5]" />
+                <overcast_soft name="overcast soft" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/overcast soft[6]" />
+                <rembrandt name="rembrandt" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/rembrandt[7]" />
+                <moonlight name="moonlight" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/moonlight[8]" />
+                <airstar_moon_balloon_space_light name="airstar moon balloon space light" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/airstar moon balloon space light[9]" />
+                <silhouette name="silhouette" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/silhouette[10]" />
+                <chiaroscuro name="chiaroscuro" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/chiaroscuro[11]" />
+                <effects name="effects" visible="false" expand="false" asset_link="aesthetic[5]/lighting[1]/effects[12]">
+                  <volumetric_fog name="volumetric fog" expand="false" asset_link="aesthetic[5]/lighting[1]/effects[12]/volumetric fog[0]" />
+                  <god_rays name="god rays" expand="false" asset_link="aesthetic[5]/lighting[1]/effects[12]/god rays[1]" />
+                  <lens_flare name="lens flare" expand="false" asset_link="aesthetic[5]/lighting[1]/effects[12]/lens flare[2]" />
                 </effects>
               </lighting>
               <color_palette name="color palette" expand="false" asset_link="aesthetic[5]/color palette[2]">
@@ -2016,10 +2028,9 @@ The character looks straight ahead in the same direction which they are facing.<
                 </reference_image>
                 <color name="color" expand="false" asset_link="environment[9]/cyclorama[3]/color[4]" />
                 <style name="style" visible="false" expand="false" asset_link="environment[9]/cyclorama[3]/style[5]" />
-                <texture name="texture" visible="false" expand="false" asset_link="environment[9]/cyclorama[3]/texture[6]" />
-                <geographic_location name="geographic location" visible="false" expand="false" asset_link="environment[9]/cyclorama[3]/geographic location[7]" />
-                <surface_materials name="surface materials" expand="false" asset_link="environment[9]/cyclorama[3]/surface materials[8]" />
-                <surface_textures name="surface textures" visible="false" expand="false" asset_link="environment[9]/cyclorama[3]/surface textures[9]" />
+                <geographic_location name="geographic location" visible="false" expand="false" asset_link="environment[9]/cyclorama[3]/geographic location[6]" />
+                <surface_materials name="surface materials" expand="false" asset_link="environment[9]/cyclorama[3]/surface materials[7]" />
+                <surface_textures name="surface textures" visible="false" expand="false" asset_link="environment[9]/cyclorama[3]/surface textures[8]" />
               </cyclorama>
               <temperature_celcius name="temperature celcius" expand="false" asset_link="environment[9]/temperature celcius[4]" />
               <sun name="sun" visible="false" expand="false" asset_link="environment[9]/sun[5]">
