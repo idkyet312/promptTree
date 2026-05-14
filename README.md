@@ -1,6 +1,6 @@
-![Prompt Tree Interface](image/promptTree_Version_1_0_23.jpg)
+![Prompt Tree Interface](promptTree.jpg)
 
-# **Prompt Tree v1.0.2**5
+# **Prompt Tree v1.0.26**
 
 ## **Overview**
 
@@ -30,21 +30,31 @@ The application uses a **4-Panel layout** to manage the workflow:
 
 ### **2. Visibility**
 
-- There are three node visibility states :
+There are three node visibility states:
 
-1. **None**  Inherits visibility of parent node. This is the default visibility state.
+1. **None**: Inherits visibility of parent node. This is the default visibility state.
 
-2. 👁  Visible. Included in prompt.
+2. 👁 **Visible**: Included in prompt.
 
-3. —  Invisible. Excluded from prompt.
+3. — **Invisible**: Excluded from prompt.
 
-- The Asset Panel nodes and the Tree Panel nodes can have separate Visibility states.
+The Asset Panel nodes and the Tree Panel nodes can have separate Visibility states.
 
-### **3. Synchronization Buttons**
+### **3. Synchronization**
 
 - **Sync Content:** Forces all linked node names and content in the Tree Panel to match the Asset Panel.
 
 - **Sync Visible:** Forces all nodes in the Tree Panel to match the visibility of the Asset Panel.
+
+- **Sync Visible Auto:** When enabled, this checkbox will automatically force all nodes in the Tree Panel to match the visibility of the Asset Panel.
+
+### **4. Reference Nodes**
+
+- **External Linking:** You can link entire external XML projects as read-only reference nodes (marked with a 🔗 icon). Broken links are clearly flagged (⚠️ \[MISSING\]).
+
+- **Dynamic Updates:** If the external file changes, you can refresh the node to pull in the latest data directly into your current project without opening the source file.
+
+- **Protection:** Reference hierarchies are strictly read-only to prevent accidental modification of your linked source files.
 
 ## **Keyboard Shortcuts**
 
@@ -54,7 +64,11 @@ The application uses a **4-Panel layout** to manage the workflow:
 
 - **Ctrl+O**: Open...
 
+- **Ctrl+R**: Reload
+
 - **Ctrl+I**: Import...
+
+- **Ctrl+E**: Export Selected Node...
 
 - **Ctrl+S**: Save
 
@@ -64,13 +78,13 @@ The application uses a **4-Panel layout** to manage the workflow:
 
 - **Ctrl+Q**: Exit
 
-### **Edit Menu**
+### **Edit Menu & Search**
 
 - **Ctrl+Z**: Undo
 
 - **Ctrl+Y / Ctrl+Shift+Z**: Redo
 
-- **Ctrl+F**: Find Dialog
+- **Ctrl+F**: Find Node/Text *(Use **Enter** for Next Match, **Shift+Enter** for Previous Match)*
 
 - **Ctrl+X**: Cut Node
 
@@ -82,7 +96,7 @@ The application uses a **4-Panel layout** to manage the workflow:
 
 - **Insert / Ctrl+Enter**: Add Child Node
 
-- **- (Minus)**: Add Separator
+- **- (Minus) / Numpad Minus**: Add Separator
 
 ### **Node Context Menu & Operations**
 
@@ -98,21 +112,29 @@ The application uses a **4-Panel layout** to manage the workflow:
 
 - **Ctrl+Shift+X**: Expand / Collapse All
 
-- **Shift+X / Alt+Click**: Expand / Collapse Branch
+- **Shift+X**: Expand / Collapse Branch
 
 - **Right/Left**: Expand / Collapse Selected Node
 
 - **Ctrl+J**: Jump to Source Asset
 
+### **Reference Operations**
+
+- **Ctrl+Shift+R**: Add Reference... *(Asset Panel only)*
+
+- **F5**: Refresh Reference
+
+- **Ctrl+Shift+P**: Edit Reference Path...
+
 ### **Mouse Operations & Navigation**
 
-- **Up/Down**: Navigate tree up and down.
+- **Up/Down**: Navigate tree up and down
 
-- **Alt+Click**: Expand / Collapse clicked node and all its children.
+- **Alt+Click**: Expand / Collapse clicked node and all its children
 
-- **Right-Click**: Opens context menu with advanced node options.
+- **Right-Click**: Opens context menu with advanced node options
 
-- **Ctrl+Home**: Jump to top of panel
+- **Ctrl+Home**: Jump to top of hovered panel
 
 ### **Prompt Operations**
 
@@ -120,7 +142,7 @@ The application uses a **4-Panel layout** to manage the workflow:
 
 ### **Template Menu**
 
-- **Load Template**: The application automatically scans a local `template/` folder for `.xml` files. Clicking a template from this menu will replace the current workspace with the template's structure without overwriting the original file.
+- **Load Template**: The application automatically scans a local template/ folder for .xml files. Clicking a template from this menu will replace the current workspace with the template's structure without overwriting the original file.
 
 ## **Drag & Drop Logic**
 
@@ -144,7 +166,6 @@ The application uses a **4-Panel layout** to manage the workflow:
 
 - **Copy Prompt**: Copies the current indented preview to the clipboard.
 
-- **Save XML**: Saves the current prompt configuration to an hierarchically tagged `.xml` file for AI digestibility.
+- **Save XML**: Saves the current prompt configuration to a hierarchically tagged `.xml` file for AI digestibility.
 
 - **Save TXT**: Exports the prompt as a standard plain text file.
-
